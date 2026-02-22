@@ -1,0 +1,42 @@
+.app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.todo-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.todo-list li:last-child {
+  border-bottom: none;
+}
+
+.todo-list label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: default;
+}
+
+.todo-list input[type='checkbox'] {
+  cursor: pointer;
+}
+
+.todo-list span {
+  flex: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  .todo-list li {
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+}
